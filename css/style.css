@@ -467,6 +467,10 @@ p {
   background-color: var(--text-color);
 }
 
+.portfolio-section .section-title:nth-child(4) {
+  margin-top: 2rem;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(1, 100%);
