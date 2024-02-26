@@ -18,14 +18,20 @@ window.addEventListener("scroll", stickyMenu);
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      768: {
+      330: {
+        centeredSlides: false,
+        spaceBetween: 10,
+      },
+      575: {
         slidesPerView: 2,
-        centeredSlides: "auto",
-        spaceBetween: 16,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
       },
       1100: {
         slidesPerView: 3,
-        centeredSlides: "auto",
         spaceBetween: 30,
       },
     },
