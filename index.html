@@ -76,28 +76,73 @@
             class="logo"
         /></a>
         <nav class="menu">
-          <a href="#portfolio" class="menu-link">Portfolio</a>
-          <a href="#certifications" class="menu-link">Certifications</a>
+          <a
+            href="#portfolio"
+            class="menu-link"
+            data-section="header"
+            data-value="menu-portfolio"
+            >Portfolio</a
+          >
+          <a
+            href="#certifications"
+            class="menu-link"
+            data-section="header"
+            data-value="menu-certifications"
+            >Certifications</a
+          >
         </nav>
       </section>
     </header>
+    <article class="translate__box">
+      <button
+        title="Translate to English Button"
+        onclick="changeLanguage('en')"
+      >
+        EN
+      </button>
+      <span>|</span>
+      <button
+        title="Translate to Spanish Button"
+        onclick="changeLanguage('es')"
+      >
+        ES
+      </button>
+    </article>
     <main>
       <!--Banner Section-->
       <section class="banner-section center-alignment section">
         <article
           class="container center-alignment start-md-alignment padding-section text-animation"
         >
-          <h1 class="main-title text-lg-start">
+          <h1
+            class="main-title text-lg-start"
+            data-section="banner"
+            data-value="main-title"
+          >
             Hello! I'm <span>Mike Vega</span>, a Front-End Developer based in
             Costa Rica.
           </h1>
-          <p class="dark-text">
+          <p
+            class="dark-text"
+            data-section="banner"
+            data-value="main-paragraph"
+          >
             I am interested in solving complex problems by deeply understanding
             the people and the worlds in which they live.
           </p>
           <aside class="center-alignment">
-            <a href="#portfolio" class="btn-primary">See selected work</a>
-            <a href="mailto:michaelvega46@gmail.com" class="btn-secondary"
+            <a
+              href="#portfolio"
+              class="btn-primary"
+              data-section="banner"
+              data-value="primary-btn"
+              >See projects</a
+            >
+            <a
+              href="mailto:michaelvega46@gmail.com"
+              class="btn-secondary"
+              data-section="banner"
+              data-value="secondary-btn"
               >Contact me</a
             >
           </aside>
@@ -105,17 +150,29 @@
       </section>
       <!--About Section-->
       <section class="padding-section center-alignment about-section section">
-        <h2 class="section-title text-lg-center subtitle-effect">
+        <h2
+          class="section-title text-lg-center subtitle-effect"
+          data-section="about"
+          data-value="about-title"
+        >
           Looking to improve every day
         </h2>
-        <p class="text-lg-center">
+        <p
+          class="text-lg-center"
+          data-section="about"
+          data-value="about-paragraph"
+        >
           I’m passionate about learning new technologies to obtain the necessary
           knowledge that allows me to compete in the gigantic and challenging
-          world of web development. <br />
-          <br />
-          This is the set of technologies that I have learned up to the present
-          date:
+          world of web development.
         </p>
+        <span
+          class="text-lg-center"
+          data-section="about"
+          data-value="about-text"
+          >This is the set of technologies that I have learned up to the present
+          date:</span
+        >
         <article class="infinite-slider-container center-alignment">
           <div class="slider-track center-alignment">
             <span>HTML5</span>
@@ -152,7 +209,11 @@
             <img src="assets/icons/diaspora.svg" alt="" />
           </div>
         </article>
-        <p class="text-lg-center">
+        <p
+          class="text-lg-center"
+          data-section="about"
+          data-value="about-last-text"
+        >
           I continue in constant learning; currently, I am learning technologies
           such as GSAP, React JS, PHP and SQL databases.
         </p>
@@ -162,10 +223,18 @@
         id="portfolio"
         class="padding-section center-alignment portfolio-section section"
       >
-        <h2 class="section-title text-lg-center dark-text text-animation">
+        <h2
+          class="section-title text-lg-center dark-text text-animation"
+          data-section="portfolio"
+          data-value="portfolio-title"
+        >
           The Projects I've worked on
         </h2>
-        <p class="dark-text text-lg-center text-animation">
+        <p
+          class="dark-text text-lg-center text-animation"
+          data-section="portfolio"
+          data-value="porfolio-paragraph"
+        >
           In my almost two years of diving into web development, I've tackled
           all sorts of projects, from mock-ups for practice to real client work.
         </p>
@@ -178,7 +247,10 @@
             />
             <aside class="project-card__content start-alignment">
               <h3>Los Santos Challenge Concept Project</h3>
-              <p>
+              <p
+                data-section="portfolio"
+                data-value="challenge-project-paragraph"
+              >
                 It's a test project for the study program, built from scratch,
                 themed around a cycling race in the Los Santos area.
                 Technologies such as HTML5, CSS3, and JavaScript were used.
@@ -187,6 +259,8 @@
                 href="https://mikequeve.github.io/proyecto-los-santos-challenge/"
                 target="_blank"
                 class="btn-terciary"
+                data-section="portfolio"
+                data-value="project-btn"
                 >View site</a
               >
             </aside>
@@ -199,7 +273,7 @@
             />
             <aside class="project-card__content start-alignment">
               <h3>iTRAVEL: Travel Agency Concept Project</h3>
-              <p>
+              <p data-section="portfolio" data-value="travel-project-paragraph">
                 It's a test project for the study program, built from scratch,
                 themed around a travel agency based in Costa Rica. Technologies
                 such as HTML5, CSS3, and JavaScript were used.
@@ -208,6 +282,8 @@
                 href="https://mikequeve.github.io/proyecto-itravel/"
                 target="_blank"
                 class="btn-terciary"
+                data-section="portfolio"
+                data-value="project-btn"
                 >View site</a
               >
             </aside>
@@ -219,8 +295,13 @@
               title="catursantos.com project mockup"
             />
             <aside class="project-card__content start-alignment">
-              <h3>Catursantos: Los Santos Tourism Chamber Project</h3>
-              <p>
+              <h3 data-section="portfolio" data-value="chamber-project-title">
+                Catursantos: Los Santos Tourism Chamber Project
+              </h3>
+              <p
+                data-section="portfolio"
+                data-value="chamber-project-paragraph"
+              >
                 Work carried out collaboratively, I participated in key phases
                 of the design and coding of the website. I was in charge of
                 sections such as the main banner and Los Santos zone section.
@@ -230,6 +311,8 @@
                 href="https://catursantos.com/"
                 target="_blank"
                 class="btn-terciary"
+                data-section="portfolio"
+                data-value="project-btn"
                 >View site</a
               >
             </aside>
@@ -242,7 +325,10 @@
             />
             <aside class="project-card__content start-alignment">
               <h3>Mediabot: Services Portfolio Concept Project</h3>
-              <p>
+              <p
+                data-section="portfolio"
+                data-value="mediabot-project-paragraph"
+              >
                 It's a test project for the study program, built from scratch,
                 themed around a services portfolio website from a web
                 development agency. Technologies such as HTML5, CSS3, and
@@ -252,20 +338,34 @@
                 href="https://mikequeve.github.io/proyecto-mediabotcr/"
                 target="_blank"
                 class="btn-terciary"
+                data-section="portfolio"
+                data-value="project-btn"
                 >View site</a
               >
             </aside>
           </div>
         </article>
-        <h2 class="section-title text-lg-center dark-text text-animation">
+        <h2
+          class="section-title text-lg-center dark-text text-animation"
+          data-section="portfolio"
+          data-value="portfolio-subtitle"
+        >
           Do you like what you seeing? <br />
           Let's have a chat!
         </h2>
-        <p class="dark-text text-lg-center text-animation">
+        <p
+          class="dark-text text-lg-center text-animation"
+          data-section="portfolio"
+          data-value="portfolio-final-text"
+        >
           I'm always looking to get engaged in new challenges, expand my
           network, or just have a coffee!
         </p>
-        <a href="#comments" class="btn-secondary text-animation"
+        <a
+          href="#comments"
+          class="btn-secondary text-animation"
+          data-section="portfolio"
+          data-value="porfolio-btn"
           >Get in touch</a
         >
       </section>
@@ -276,10 +376,16 @@
       >
         <h2
           class="section-title center-lg-alignment text-lg-center subtitle-effect"
+          data-section="certifications"
+          data-value="certifications-title"
         >
           The way I have gotten to this point
         </h2>
-        <p class="text-lg-center">
+        <p
+          class="text-lg-center"
+          data-section="certifications"
+          data-value="certifications-paragraph"
+        >
           Time management emerges as a central challenge. Navigating through
           academic tasks, projects, and personal commitments demands
           organizational and prioritization skills.
@@ -339,18 +445,31 @@
           <article
             class="competition-section__text center-alignment start-md-alignment text-animation"
           >
-            <h2 class="section-title dark-text">
+            <h2
+              class="section-title dark-text"
+              data-section="competition"
+              data-value="competition-title"
+            >
               The only person you are destined to become is the person you
               decide to be!
             </h2>
-            <p class="dark-text">
-              <b>First-place winner</b> in the
-              <span>Regional World Skills Costa Rica 2023 Competition</span> in
-              the skill of web technologies. Three days of competition where
+            <p
+              class="dark-text"
+              data-section="competition"
+              data-value="competition-paragraph"
+            >
+              <b>First-place winner</b>
+              in the
+              <span>Regional World Skills Costa Rica 2023 Competition</span>
+              in the skill of web technologies. Three days of competition where
               knowledge in HTML, CSS, JavaScript, Bootstrap, WordPress,
               Illustrator and Photoshop was assessed.
             </p>
-            <a href="mailto:michaelvega46@gmail.com" class="btn-secondary"
+            <a
+              href="mailto:michaelvega46@gmail.com"
+              class="btn-secondary"
+              data-section="competition"
+              data-value="competition-btn"
               >Let's work together</a
             >
           </article>
@@ -367,7 +486,13 @@
         class="padding-section center-alignment comments-section section"
       >
         <div class="container center-alignment text-animation">
-          <h2 class="section-title text-lg-center">Send me your comments!</h2>
+          <h2
+            class="section-title text-lg-center"
+            data-section="comments"
+            data-value="comments-title"
+          >
+            Send me your comments!
+          </h2>
           <article class="form-container center-alignment">
             <form class="center-alignment comments-form">
               <input
@@ -397,7 +522,12 @@
                 title="No more than 255 characters"
                 required
               ></textarea>
-              <input type="submit" value="Send" />
+              <input
+                type="submit"
+                value="Send"
+                data-section="comments"
+                data-value="comments-form-btn"
+              />
             </form>
             <div class="comments-form-loader">
               <img src="assets/icons/loader.svg" alt="Sending..." />

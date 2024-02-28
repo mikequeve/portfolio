@@ -142,3 +142,31 @@ window.addEventListener("scroll", stickyMenu);
     },
   });
 })();
+
+//changeLanguaje funtionality
+
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async (language) => {
+  const resp = await fetch(`./languages/${language}.json`);
+  const texts = await resp.json();
+  for (const textToChange of textsToChange) {
+    let $section = textToChange.dataset.section;
+    let $value = textToChange.dataset.value;
+    textToChange.innerHTML = texts[$section][$value];
+  }
+  localStorage.setItem("lang", language);
+};
+
+const loadLanguage = () => {
+  let loadedLanguaje = localStorage.getItem("lang");
+  console.log(loadedLanguaje);
+
+  if (loadedLanguaje) {
+    changeLanguage(loadedLanguaje);
+  } else {
+    changeLanguage("default");
+  }
+};
+
+loadLanguage();

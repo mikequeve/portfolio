@@ -1,0 +1,48 @@
+{
+  "header": {
+    "menu-portfolio": "Portafolio",
+    "menu-certifications": "Certificaciones"
+  },
+
+  "banner": {
+    "main-title": "Hola! Soy <span>Mike Vega</span>, Desarrollador Front-end de Costa Rica.",
+    "main-paragraph": "Interesado en resolver problemas complejos mediante la comprensión de sus necesidades.",
+    "primary-btn": "Ver proyectos",
+    "secondary-btn": "Contactarme"
+  },
+
+  "about": {
+    "about-title": "Tratando de mejorar cada día",
+    "about-paragraph": "Apasionado por aprender nuevas tecnologías que me permitan adquirir el conocimiento necesario para competir en este gigantesto y complejo mundo del desarrollo web.",
+    "about-text": "Set de tecnologías que he aprendido hasta ahora: ",
+    "about-last-text": "Continúo en constante aprendizaje, actualmente me encuentro estudiando tecnologías como GSAP, React JS, PHP y bases de datos SQL."
+  },
+
+  "portfolio": {
+    "portfolio-title": "Proyectos en los que he trabajado",
+    "porfolio-paragraph": "En mis casi dos años de haber incursionado en el desarrollo web he participado en diferentes proyectos, desde ejercicios de práctica hasta proyectos con clientes reales.",
+    "challenge-project-paragraph": "Proyecto de prueba para el programa de estudio, diseñado desde cero, basado en una carrera de ciclísmo en la Zona de los Santos. Se utilizaron tecnologías como HTML5 - CSS3 - JAVASCRIPT",
+    "travel-project-paragraph": "Proyecto de prueba para el programa de estudio, diseñado desde cero, basado en una agencia de viajes ubicada en San José. Se utilizaron herramientas como HTML5 - CSS3 - JAVASCRIPT",
+    "chamber-project-title": "Catursantos: Cámara de Turísmo de los Santos",
+    "chamber-project-paragraph": "Proyecto realizado en forma colaborativa. Fuí el encargado de diseñar las secciones del banner principal y 'La Zona de los Santos'. Sitio web realizado en el entorno WORDPRESS",
+    "mediabot-project-paragraph": "Proyecto de prueba para el programa de estudio, diseñado desde cero, basado en un portafolio de servicios web. Se hizo uso de tecnologías como HTML5 - CSS3 - JAVASCRIPT",
+    "project-btn": "Ver sitio",
+    "portfolio-subtitle": "¿Te está gustando lo que ves? <br /> ¡Vamos a conversar!",
+    "portfolio-final-text": "Siempre estoy buscando nuevos desafíos, expandir mi red o solo tomarnos un café",
+    "porfolio-btn": "Contactar"
+  },
+
+  "certifications": {
+    "certifications-title": "La manera en la que he llegado hasta aquí",
+    "certifications-paragraph": "Las tareas académicas, los proyectos y los compromisos personales exigen capacidad de organización y priorización. La gestión del tiempo es uno de los principales retos."
+  },
+
+  "competition": {
+    "competition-title": "La persona que estás destina a ser, es la persona en quien decidas convertirte!",
+    "competition-paragraph": "<b>Primer lugar</b> en la <span>Competencia Regional World Skills Costa Rica 2023</span> en la habilidad de tecnologías web. Tres días de competición donde se evaluaron tecnologías como HTML5, CSS3, JAVASCRIPT, Boostrap, WordPress, Illustrador y Photoshop.",
+    "competition-btn": "Trabajemos juntos"
+  },
+  "comments": {
+    "comments-title": "¡Envíame tus comentarios!"
+  }
+}
