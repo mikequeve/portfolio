@@ -262,6 +262,7 @@ img {
 .certification-slider {
   width: 100%;
   max-width: 60rem;
+  margin-top: 2rem;
 }
 
 .swiper-slide img {
