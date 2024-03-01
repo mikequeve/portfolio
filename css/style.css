@@ -80,6 +80,7 @@ h6 {
 
 p {
   line-height: 1.6;
+  max-width: 70ch;
 }
 
 img {
@@ -160,10 +161,6 @@ img {
   font-family: var(--title-font);
 }
 
-p {
-  max-width: 100%;
-}
-
 @media screen and (min-width: 768px) {
   .center-lg-alignment {
     display: flex;
@@ -185,10 +182,6 @@ p {
   .section-title {
     width: 38.625rem;
     font-size: 4rem;
-  }
-
-  p {
-    max-width: 38.5rem;
   }
 }
 
@@ -219,10 +212,6 @@ p {
 
   .section-title {
     width: 41.5rem;
-  }
-
-  p {
-    max-width: 50rem;
   }
 }
 
@@ -672,10 +661,6 @@ p {
     flex-direction: row;
     max-width: var(--max-width);
     justify-content: space-between;
-  }
-
-  .competition-section__text > p {
-    width: 38.5rem;
   }
 
   .competition-section__text > p span {
