@@ -658,6 +658,10 @@ img {
     font-size: 1rem;
   }
 
+  .portfolio-section .section-title:nth-child(4) {
+    margin-top: 1rem;
+  }
+
   .competition-section .container {
     flex-direction: row;
     max-width: var(--max-width);
