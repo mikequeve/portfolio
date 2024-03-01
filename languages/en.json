@@ -14,7 +14,7 @@
   "about": {
     "about-title": "Looking to improve every day",
     "about-paragraph": "I’m Mike Vega a passionate about learning new technologies to obtain the necessary knowledge that allows me to compete in the gigantic and challenging world of web development..",
-    "about-text": "This is the set of technologies that I have learned up to the present date: ",
+    "about-text": "This is the set of technologies that I have learned up as a Front-end developer to the present date:",
     "about-last-text": "I continue in constant learning; currently, I am learning technologies such as GSAP, React JS, PHP and SQL databases.."
   },
 
@@ -28,7 +28,7 @@
     "mediabot-project-paragraph": "It's a test project for the study program, built from scratch, themed around a services portfolio website from a web development agency. Technologies such as HTML5, CSS3, and JavaScript were used.",
     "project-btn": "View site",
     "portfolio-subtitle": "Do you like what you seeing? <br /> Let's have a chat!",
-    "portfolio-final-text": "I'm always looking to get engaged in new challenges, expand my network, or just have a coffee!",
+    "portfolio-final-text": "I'm based on Costa Rica but I'm always looking to get engaged in new challenges or expand my network no matter if you are from another contry!",
     "porfolio-btn": "Get in touch"
   },
 
