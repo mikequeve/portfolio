@@ -330,16 +330,6 @@ img {
   }
 }
 
-/*
-.slider .slider-nav {
-  flex-direction: row;
-}
-
-.slider .slider-nav img {
-  margin-inline: 0.1rem;
-  cursor: pointer;
-} */
-
 /* Form */
 .form-container {
   width: 100%;
@@ -392,7 +382,7 @@ img {
 /*----- SITE STYLES -----*/
 .header {
   position: fixed;
-  top: 3vh;
+  top: 1vh;
   left: 0;
   z-index: 999;
   width: 100%;

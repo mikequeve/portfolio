@@ -1,21 +1,13 @@
-// Efecto de menu sticky
-function stickyMenu() {
-  const $header = document.querySelector("header");
-  $header.classList.toggle("sticky", window.scrollY > 100);
-}
-
-window.addEventListener("scroll", stickyMenu);
-
 //Draggable Slider
 (() => {
-  let swiperHome = new Swiper(".certification-slider", {
+  let swiperHome = new Swiper('.certification-slider', {
     loop: true,
     grabCursor: true,
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       330: {
@@ -40,15 +32,15 @@ window.addEventListener("scroll", stickyMenu);
 
 //Comments Form
 ((d) => {
-  const $form = d.querySelector(".comments-form"),
-    $loader = d.querySelector(".comments-form-loader"),
-    $response = d.querySelector(".response");
+  const $form = d.querySelector('.comments-form'),
+    $loader = d.querySelector('.comments-form-loader'),
+    $response = d.querySelector('.response');
 
-  $form.addEventListener("submit", (e) => {
+  $form.addEventListener('submit', (e) => {
     e.preventDefault();
-    $loader.style.display = "block";
-    fetch("https://formsubmit.co/ajax/michaelvega46@gmail.com", {
-      method: "POST",
+    $loader.style.display = 'block';
+    fetch('https://formsubmit.co/ajax/michaelvega46@gmail.com', {
+      method: 'POST',
       body: new FormData(e.target),
     })
       .then((response) =>
@@ -56,22 +48,22 @@ window.addEventListener("scroll", stickyMenu);
       )
       .then((json) => {
         //console.log(json);
-        $response.classList.remove("none");
+        $response.classList.remove('none');
         $form.reset();
       })
       .catch((error) => {
         console.log(error);
         let message =
-          error.statusText || "Error al enviar, intenta nuevamente...";
+          error.statusText || 'Error al enviar, intenta nuevamente...';
         $response.querySelector(
-          "h3"
+          'h3'
         ).innerHTML = `Error ${error.status}: ${message}`;
-        $response.classList.remove("none");
+        $response.classList.remove('none');
       })
       .finally(() => {
-        $loader.style.display = "none";
+        $loader.style.display = 'none';
         setTimeout(() => {
-          $response.classList.add("none");
+          $response.classList.add('none');
         }, 3000);
       });
   });
@@ -80,13 +72,13 @@ window.addEventListener("scroll", stickyMenu);
 //ScrollTrigger Sections Animation with GSAP
 (() => {
   gsap.registerPlugin(ScrollTrigger);
-  let panels = gsap.utils.toArray(".section");
+  let panels = gsap.utils.toArray('.section');
 
   panels.forEach((panel, i) => {
     ScrollTrigger.create({
       trigger: panel,
       start: () =>
-        panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+        panel.offsetHeight < window.innerHeight ? 'top top' : 'bottom bottom', // if it's shorter than the viewport, we prefer to pin it at the top
       pin: true,
       pinSpacing: false,
     });
@@ -95,7 +87,7 @@ window.addEventListener("scroll", stickyMenu);
 
 //Text Effect Animation
 ((d) => {
-  let textAnimation = d.querySelectorAll(".text-animation");
+  let textAnimation = d.querySelectorAll('.text-animation');
 
   textAnimation.forEach((text) => {
     gsap.to(text, {
@@ -113,16 +105,16 @@ window.addEventListener("scroll", stickyMenu);
 
 //About & Certifications Sections Titles - Scroll Effect
 ((d) => {
-  const subtitleEffects = d.querySelectorAll(".subtitle-effect");
+  const subtitleEffects = d.querySelectorAll('.subtitle-effect');
 
   subtitleEffects.forEach((subtitle) => {
     gsap.to(subtitle, {
-      backgroundSize: "100%",
-      ease: "none",
+      backgroundSize: '100%',
+      ease: 'none',
       scrollTrigger: {
         trigger: subtitle,
-        start: "center 80%",
-        end: "center 20%",
+        start: 'center 80%',
+        end: 'center 20%',
         scrub: true,
       },
     });
@@ -131,21 +123,21 @@ window.addEventListener("scroll", stickyMenu);
 
 //Social Icons Animation
 (() => {
-  gsap.from(".social-icon", {
+  gsap.from('.social-icon', {
     duration: 0.3,
     y: -200,
     scale: 0,
     stagger: 0.5,
     delay: 1,
     scrollTrigger: {
-      trigger: ".social-icon",
+      trigger: '.social-icon',
     },
   });
 })();
 
 //changeLanguaje funtionality
 
-const textsToChange = document.querySelectorAll("[data-section]");
+const textsToChange = document.querySelectorAll('[data-section]');
 
 const changeLanguage = async (language) => {
   const resp = await fetch(`./languages/${language}.json`);
@@ -155,17 +147,17 @@ const changeLanguage = async (language) => {
     let $value = textToChange.dataset.value;
     textToChange.innerHTML = texts[$section][$value];
   }
-  localStorage.setItem("lang", language);
+  localStorage.setItem('lang', language);
 };
 
 const loadLanguage = () => {
-  let loadedLanguaje = localStorage.getItem("lang");
+  let loadedLanguaje = localStorage.getItem('lang');
   console.log(loadedLanguaje);
 
   if (loadedLanguaje) {
     changeLanguage(loadedLanguaje);
   } else {
-    changeLanguage("default");
+    changeLanguage('default');
   }
 };
 
