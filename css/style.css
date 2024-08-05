@@ -142,13 +142,25 @@ img {
 }
 
 .menu-link {
-  padding: 0.75rem 1.5rem;
+  position: relative;
   background-color: transparent;
   border-radius: 7px;
+  margin-left: 16px;
 }
 
-.menu-link:hover {
-  background-color: var(--menu-link-hover);
+.menu-link::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--action-color);
+  content: '';
+  transition: all 200ms;
+}
+
+.menu-link:hover::after {
+  width: 100%;
 }
 
 .padding-section {
